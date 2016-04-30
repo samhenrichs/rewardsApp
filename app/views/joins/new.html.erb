@@ -1,0 +1,19 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <% if user_signed_in? %>
+    <%= form_for @join do |f| %>
+      <%= f.email_field :email, value: current_user.email, class: "form-control input-lg", id: "join" %> <br>
+      <%= f.submit "Join This Month's Rewards", class: "btn btn-success btn-lg" %>
+    <% end %>
+    <% else %>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Sorry, you're not currently signed in, so you can't sign up for our rewards. You can sign in <a href="/users/sign_in">here.</a>
+      </div>
+    </div>
+    <% end %>
+  </body>
+</html>

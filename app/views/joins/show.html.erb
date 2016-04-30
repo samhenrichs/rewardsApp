@@ -4,13 +4,13 @@
   </head>
   <body>
     <% if current_user.try(:admin?) %>
-    <h3 class="text-success">Users:</h3>
+    <h3 class="text-success">Signed-Up Users:</h3>
     <table class="table table-striped table-hover">
       <tr>
         <td>
-          <% @user = User.all %>
-          <% @user.each do |user| %>
-            <%= user.email %> <br>
+          <% @join = Join.all %>
+          <% @join.each do |join| %>
+            <%= join.email %> <br>
           <% end %>
         </td>
       </tr>
