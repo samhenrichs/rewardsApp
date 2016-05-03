@@ -3,6 +3,12 @@
 
   </head>
   <body>
-    
+    <div>
+      <h2><%= @blog.title %></h2>
+      <h5><%= @blog.body %></h5>
+      <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
+        <%= link_to "Update Post", edit_blog_path(@blog) %>
+      <% end %>
+    </div>
   </body>
 </html>

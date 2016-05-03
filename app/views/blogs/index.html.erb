@@ -3,9 +3,16 @@
 
   </head>
   <body>
+    <div class="blog col-lg-12">
     <% @blogs.each do |blog| %>
-    <h3><%= blog.title %></h3>
-    <div><%= blog.body %></div>
+    <div><% blog.image %></div>
+    <h2 class="blog-title"><%= link_to blog.title, blog, class: "blog-title blog-links" %></h2>
+    <h5 class="blog-body"><%= truncate(blog.body, :length => 10) %></h5>
+    <br>
+    <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
+      <%= link_to "Delete Blog", blog_path(@blog), method: :delete, data: { confirm: "Are you freaking sure? Don't screw up." } %>
     <% end %>
+    <% end %>
+    </div>
   </body>
 </html>
