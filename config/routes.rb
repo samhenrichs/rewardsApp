@@ -1,22 +1,33 @@
 Rails.application.routes.draw do
 
+  root 'home#home'
+
   devise_for :admins
   resources :joins
-
-  get 'joins/index'
-
+  resources :blogs
   devise_for :users
 
-  root 'home#about'
+  #Blog
+  get 'blogs/new'
 
-  get 'home/admin'
-  
-  get 'home/index'
+  get 'blogs/show'
+
+  get 'blogs/edit'
+
+  get 'blogs/destroy'
+
+  #Join
+  get 'joins/index'
+
+  get 'joins/show'
+
+  #Home
+  get 'home/contactus'
+
+  get 'home/home'
+
+  get 'home/howitworks'
 
   get 'home/list'
-
-  get 'home/about'
-
-  get 'home/terms'
 
 end

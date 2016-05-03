@@ -1,13 +1,15 @@
 <nav class="navbar navbar-default">
 <div class="container-fluid">
 <div class="navbar-header">
-  <a class="navbar-brand" href="#">Brand</a>
+  <a class="navbar-brand" href="#">Avacado Rewards</a>
 </div>
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   <ul class="nav navbar-nav">
-    <li><a href="/joins/new">Home</a></li>
-    <li><a href="/home/about">About</a></li>
-    <li><a href="/home/contact">Contact</a></li>
+    <li><a href="/home/home">Home</a></li>
+    <li><a href="/home/howitworks">How It Works</a></li>
+    <li><a href="/joins/new">Join</a></li>
+    <li><a href="/blogs">Blog</a></li>
+    <li><a href="/home/contactus">Contact Us</a></li>
   </ul>
   <ul class="nav navbar-nav navbar-right">
    <% if user_signed_in? %>
@@ -18,6 +20,6 @@
      <li><%= link_to "Sign In", new_user_session_path %></li>
    <% end %>
  </ul>
-</div><!-- /.navbar-collapse -->
-</div><!-- /.container-fluid -->
+</div>
+</div>
 </nav>

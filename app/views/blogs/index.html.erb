@@ -1,0 +1,11 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    <% @blogs.each do |blog| %>
+    <h3><%= blog.title %></h3>
+    <div><%= blog.body %></div>
+    <% end %>
+  </body>
+</html>

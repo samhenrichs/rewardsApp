@@ -15,8 +15,10 @@ class JoinsController < ApplicationController
   end
 
   def show
-    
+
   end
+
+
 
   private
 

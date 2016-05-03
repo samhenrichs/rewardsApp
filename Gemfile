@@ -14,6 +14,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'rails_12factor'
 gem "figaro"
 gem 'devise'
+gem "paperclip", "~> 5.0.0.beta1"
 
 group :development, :test do
   gem 'byebug'

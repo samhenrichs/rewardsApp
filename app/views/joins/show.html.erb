@@ -3,7 +3,7 @@
 
   </head>
   <body>
-    <% if current_user.try(:admin?) %>
+    <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
     <h3 class="text-success">Signed-Up Users:</h3>
     <table class="table table-striped table-hover">
       <tr>
@@ -15,6 +15,8 @@
         </td>
       </tr>
     </table>
+    <% else %>
+    <h3>Thanks for signing up! You'll get an email at the end of the month letting you know if you won.</h3>
     <% end %>
   </body>
 </html>

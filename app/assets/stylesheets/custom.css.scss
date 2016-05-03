@@ -4271,6 +4271,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 18px;
   line-height: 20px;
   height: 50px;
+  color: #28b62c;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
@@ -4491,11 +4492,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-color: #28B62C;
 }
 .navbar-default .navbar-brand {
-  color: #333333;
+  color: #28b62c;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #333333;
+  color: #368b38;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
@@ -7167,6 +7168,14 @@ a.list-group-item-danger.active:focus {
     outline: 0 !important;
 }
 #join {
-  width: 50%;
+  width: 30%;
+  margin-left: 35%;
+}
 
+.center {
+  text-align: center;
+}
+
+#vapenation {
+  margin-left: 25%;
 }

@@ -3,17 +3,20 @@
 
   </head>
   <body>
-    <% if user_signed_in? %>
-    <%= form_for @join do |f| %>
-      <%= f.email_field :email, value: current_user.email, class: "form-control input-lg", id: "join" %> <br>
-      <%= f.submit "Join This Month's Rewards", class: "btn btn-success btn-lg" %>
-    <% end %>
+    <% if Join.exists?(email: current_user.try(:email)) %>
+      <h3>You're already signed up for this month! Thanks!</h3>
     <% else %>
-    <div class="panel panel-default">
-      <div class="panel-body">
-        Sorry, you're not currently signed in, so you can't sign up for our rewards. You can sign in <a href="/users/sign_in">here.</a>
+      <% if user_signed_in? %>
+      <div>
+        <h3 class="center">Want to join? Just click the button below.</h3>
       </div>
-    </div>
+      <%= form_for @join do |f| %>
+        <%= f.email_field :email, value: current_user.email, class: "form-control input-lg", type: "hidden" %> <br>
+        <%= f.submit "Join This Month's Rewards", class: "btn btn-success btn-lg", id: "join" %>
+      <% end %>
+      <% else %>
+        <h3>Sorry, you're not currently signed in, so you can't sign up for our rewards. You can sign in <a href="/users/sign_in">here.</a></h3>
+    <% end %>
     <% end %>
   </body>
 </html>

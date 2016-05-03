@@ -3,7 +3,7 @@
 
   </head>
   <body>
-    <% if current_user.try(:admin?) %>
+    <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
     <h3 class="text-success">Users:</h3>
     <table class="table table-striped table-hover">
       <tr>
