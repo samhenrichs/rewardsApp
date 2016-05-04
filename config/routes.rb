@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'home#home'
+  root 'joins#new'
 
   devise_for :admins
   resources :joins

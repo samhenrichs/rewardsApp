@@ -10,7 +10,7 @@
     <h5 class="blog-body"><%= truncate(blog.body, :length => 10) %></h5>
     <br>
     <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
-      <%= link_to "Delete Blog", blog_path(@blog), method: :delete, data: { confirm: "Are you freaking sure? Don't screw up." } %>
+      <%= link_to "Delete Blog", blog_path(@blog), method: :delete, data: { confirm: "Are you freaking? Don't screw up." } %>
     <% end %>
     <% end %>
     </div>
