@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
-@import "bootstrap";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,800italic,800,700italic,700,600italic);@import "bootstrap";
 /*!
  * bootswatch v3.3.6
  * Homepage: http://bootswatch.com
@@ -14,12 +13,13 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 body {
   margin: 0;
+  font-family: "Open Sans";
 }
 article,
 aside,
@@ -114,7 +114,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: "Open Sans", monospace, monospace;
   font-size: 1em;
 }
 button,
@@ -1087,7 +1087,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.846;
   color: #666666;
@@ -1537,7 +1537,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: "Open Sans", Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 code {
   padding: 2px 4px;
@@ -5998,7 +5998,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6116,7 +6116,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6383,7 +6383,7 @@ button.close {
   width: 20px;
   height: 20px;
   line-height: 1;
-  font-family: serif;
+  font-family: "Open Sans", serif;
 }
 .carousel-control .icon-prev:before {
   content: '\2039';
@@ -7524,4 +7524,15 @@ input[type="checkbox"]:disabled:checked:after,
 }
 *:focus {
     outline: 0 !important;
+}
+.blog {
+  margin-top: 25px;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+.blog-body {
+  line-height: 30px;
+}
+.blog-show {
+  margin: 0 auto;
 }
