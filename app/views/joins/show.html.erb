@@ -10,7 +10,7 @@
         <td>
           <% @join = Join.all %>
           <% @join.each do |join| %>
-            <%= join.email %> <br>
+            <%= join.email %> <%= link_to "Delete Joined User", join_path(join), method: :delete, data: { confirm: "Are you sure? Don't screw up." } %><br>
           <% end %>
         </td>
       </tr>

@@ -7521,3 +7521,6 @@ input[type="checkbox"]:disabled:checked:after,
 .carousel-caption h6 {
   color: inherit;
 }
+*:focus {
+    outline: 0 !important;
+}

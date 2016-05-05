@@ -18,6 +18,11 @@ class JoinsController < ApplicationController
 
   end
 
+  def destroy
+    @join = Join.find(params[:id])
+    @join.destroy
+    redirect_to root_path
+  end
 
 
   private
