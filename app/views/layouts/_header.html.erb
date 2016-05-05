@@ -9,7 +9,7 @@
         </button>
         <a class="navbar-brand" href="/joins/new">
           Yeti Rewards
-          <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
+          <% if current_user.try(:email) == "sbhenrichs@gmail.com" || "camblackwell2@gmail.com" %>
           <em>Admin</em>
           <% end %>
         </a>
@@ -20,9 +20,9 @@
     <li><a href="/home/howitworks">How It Works</a></li>
     <li><a href="/blogs">Blog</a></li>
     <li><a href="/home/contactus">Contact Us</a></li>
-    <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
-    <li><a href="/joins/show">Joined Users</a></li>
-    <li><a href="/home/list">Signed-Up User</a></li>
+    <% if current_user.try(:email) == "sbhenrichs@gmail.com" || "camblackwell2@gmail.com" %>
+    <li><a href="/joins/show">Signed-Up Users</a></li>
+    <li><a href="/home/list">Users</a></li>
     <li><a href="/blogs/new">Create Blog</a></li>
     <% end %>
   </ul>

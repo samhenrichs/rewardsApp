@@ -12,7 +12,7 @@
       </div>
       <%= form_for @join do |f| %>
         <%= f.email_field :email, value: current_user.email, class: "form-control input-lg", type: "hidden" %> <br>
-        <%= f.submit "Join This Month's Rewards", class: "btn btn-success btn-lg", id: "join" %>
+        <%= f.submit "Join This Month's Rewards", class: "btn btn-primary", id: "join" %>
       <% end %>
       <% else %>
         <h3>Sorry, you're not currently signed in, so you can't sign up for our rewards. You can sign in <a href="/users/sign_in">here.</a></h3>

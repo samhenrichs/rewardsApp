@@ -8,7 +8,7 @@
       <div class="blog-show col-lg-8">
       <h2><%= @blog.title %></h2>
       <h5 class="blog-body"><%= @blog.body %></h5>
-      <% if current_user.try(:email) == "sbhenrichs@gmail.com" %>
+      <% if current_user.try(:email) == "sbhenrichs@gmail.com" || "camblackwell2@gmail.com" %>
         <%= link_to "Update Post", edit_blog_path(@blog) %>
       <% end %>
     </div>
